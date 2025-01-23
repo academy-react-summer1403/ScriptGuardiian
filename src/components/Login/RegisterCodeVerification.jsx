@@ -14,7 +14,6 @@ const RegisterCodeVerification = ({
   toggleModal,
   OpenRegisterFinish,
 }) => {
-  // دریافت شماره تلفن از ریداکس
   const phoneNumber = useSelector((state) => state.phoneNumber.phoneNumber);
   const {
     mutate: RegisterVerificationCode,
@@ -105,7 +104,7 @@ const RegisterCodeVerification = ({
             <NavLink className={""}> تغییر دهید</NavLink>
           </div>
           <form onSubmit={formik.handleSubmit}>
-            <div className="flex relative mt-[24px] mx-auto w-[356px] justify-between">
+            <div className="flex relative mt-[24px] mx-auto w-[356px] justify-between flex-row-reverse">
               <input
                 name="verifyCode1"
                 type="text"

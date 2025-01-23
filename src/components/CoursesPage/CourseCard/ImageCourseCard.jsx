@@ -15,7 +15,9 @@ const ImageCourseCard = ({ tumbImageAddress }) => {
       <div className="flex justify-center  h-[200px] items-center ">
         <img
           src={
-            tumbImageAddress && tumbImageAddress !== "null"
+            tumbImageAddress &&
+            tumbImageAddress !== "null" &&
+            tumbImageAddress != "Not-set"
               ? tumbImageAddress
               : image
           }

@@ -94,20 +94,20 @@ const RegisterFinish = ({ isOpen, toggleModal }) => {
           </div>
           <form onSubmit={formik.handleSubmit}>
             <input
-              className="sm:w-[365px] w-[80%] h-[56px] border-[#CFD8DC] dark:bg-gray-900 dark:border-gray-950 dark:placeholder:text-gray-200 border rounded-[50px] pr-5 mr-[32px] mt-[48px] outline-none dark:text-gray-200 text-[#607D8B]"
+              className="sm:w-[365px] w-[80%] h-[56px] border-[#CFD8DC] dark:bg-gray-900 dark:border-gray-950 dark:placeholder:text-gray-200 border rounded-[50px] pr-5 mr-[32px] mt-[48px] mb-5 outline-none dark:text-gray-200 text-[#607D8B]"
               placeholder="ایمیل"
               name="gmail"
               {...formik.getFieldProps("gmail")}
             />
 
             {formik.errors.gmail && (
-              <div className="dark:text-red-800 text-red-600 absolute top-[70px] right-[120px]">
+              <div className="dark:text-red-800 text-red-600 absolute top-[188px] right-[43px]">
                 {formik.errors.gmail}
               </div>
             )}
 
             <input
-              className="sm:w-[365px] w-[80%] h-[56px] border-[#CFD8DC] border  dark:bg-gray-900 dark:border-gray-950 dark:placeholder:text-gray-200 rounded-[50px] pr-5 mr-[32px] mt-[16px] outline-none text-[#607D8B] dark:text-white"
+              className="sm:w-[365px] w-[80%] h-[56px] border-[#CFD8DC] border  dark:bg-gray-900 dark:border-gray-950 dark:placeholder:text-gray-200 rounded-[50px] pr-5 mr-[32px] mt-[16px] outline-none mb-5 text-[#607D8B] dark:text-white"
               placeholder="رمز عبور"
               name="password"
               type="text"
@@ -115,7 +115,7 @@ const RegisterFinish = ({ isOpen, toggleModal }) => {
             />
 
             {formik.errors.password && (
-              <div className="dark:text-red-800 text-red-600 absolute top-[70px] right-[120px]">
+              <div className="dark:text-red-800 text-red-600 absolute top-[278px] right-[43px]">
                 {formik.errors.password}
               </div>
             )}
@@ -129,7 +129,7 @@ const RegisterFinish = ({ isOpen, toggleModal }) => {
             />
 
             {formik.errors.phoneNumber && (
-              <div className="dark:text-red-800 text-red-600 absolute top-[70px] right-[120px]">
+              <div className="dark:text-red-800 text-red-600 absolute top-[378px] right-[43px]">
                 {formik.errors.phoneNumber}
               </div>
             )}
@@ -160,14 +160,14 @@ const RegisterFinish = ({ isOpen, toggleModal }) => {
                   type="submit"
                   className="rounded-[80px] text-white w-[208px] h-[56px] bg-[#2196F3] dark:bg-[#1565C0] hover:bg-[#1976D2] dark:hover:bg-[#0D47A1] transition-colors duration-300"
                 >
-                  ثبت نام{" "}
+                  <CustomSpinner color={"#FFF"} style={""} size={"30"} />
                 </button>
               ) : (
                 <button
                   type="submit"
                   className="rounded-[80px] text-white w-[208px] h-[56px] bg-[#2196F3] dark:bg-[#1565C0] hover:bg-[#1976D2] dark:hover:bg-[#0D47A1] transition-colors duration-300"
                 >
-                  <CustomSpinner color={"#FFF"} style={""} size={"30"} />
+                  ثبت نام{" "}
                 </button>
               )}
             </div>

@@ -97,9 +97,9 @@ const MyCourseComment = () => {
   return (
     <>
       <div className="flex flex-col w-[95%]  dark:bg-gray-900 h-[400px] mt-5 overflow-hidden">
-        <div className="flex  items-center text-white h-[50px] bg-[#69E5B8] dark:bg-[#145540]  w-full rounded-xl mb-2 md:text-base sm:text-sm text-xs  justify-between">
+        <div className="flex  items-center text-white h-[50px] bg-[#69E5B8] dark:bg-[#145540]  w-full rounded-xl mb-2 md:text-base sm:text-sm text-xs justify-between ">
           <h2 className="mr-5">عنوان کامنت</h2>
-          <h2 className="mr-5 sm:block hidden">توضیحات کامنت</h2>
+          <h2 className=" sm:block hidden">توضیحات کامنت</h2>
           <h2 className="">وضعیت</h2>
           <h2 className="ml-5">اقدامات</h2>
         </div>
@@ -180,7 +180,7 @@ const MyCourseComment = () => {
                       : item.title}
                   </div>
                   <div
-                    className=" min-w-[150px] md:text-base sm:text-xs sm:block hidden"
+                    className=" w-[150px] md:text-base sm:text-xs sm:block hidden"
                     title={item?.describe}
                   >
                     {item?.describe?.length > 20
