@@ -48,7 +48,7 @@ const ListFavoriteNews = ({
         </div>
 
         <div className="lg:mr-[12%] md:mr-[6%]   lg:w-[10%] md:w-[10%]  xl:w-[13%] ">
-          {title}
+          {title && title?.length > 33 ? title.slice(0, 33) : title}
         </div>
         <div className="lg:mr-[5.3%] md:mr-[5%]  lg:w-[12%] md:w-[15%] b">
           {currentView && convertEnToPe(currentView)}
@@ -60,7 +60,7 @@ const ListFavoriteNews = ({
             : convertEnToPe(currentRate.toFixed(2))}
         </div>
         <div className="lg:mr-[8.3%] md:mr-[5%]  lg:w-[13%] md:w-[13%] ">
-        {currentLikeCount % 1 === 0
+          {currentLikeCount % 1 === 0
             ? convertEnToPe(currentLikeCount.toFixed(0))
             : convertEnToPe(currentLikeCount.toFixed(2))}
         </div>

@@ -37,7 +37,9 @@ const CoursesCard = ({
       {/* Content */}
 
       {/* TopicCourses */}
-      <h3 className="font-[700] mt-[16px] mr-[16px] ">{title} </h3>
+      <h3 className="font-[700] mt-[16px] mr-[16px] ">
+        {title && title.length > 20 ? title.slice(0, 20) : title}{" "}
+      </h3>
       <CourseCardInfo lastUpdate={lastUpdate} />
       <CourseCardInstructor teacherName={teacherName} />
       <PriceAndFavoritesCard
